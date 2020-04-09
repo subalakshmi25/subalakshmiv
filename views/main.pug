@@ -2,7 +2,7 @@ extends layout
 
 block content
   .timeline
-    h2 Auction progress list
+    h2 progress list
         table#good-list
         
       
@@ -11,7 +11,7 @@ block content
           td= good.name
           td: img(src='/img/' + good.img)
           td= good.price
-          td.time(data-start=good.createdAt data-end=good.end) 00:00:00
+          td.time(data-start=good.createdAt data-end=good.end)
           td: a.enter.btn(href='/good/' + good.id) 
   script(src='https://cdnjs.cloudflare.com/ajax/libs/event-source-polyfill/0.0.9/eventsource.min.js')
   script.
